@@ -1,0 +1,37 @@
+# components
+smakotey.io/app/components/PasswordPage.jsx
+
+# dependencies
+smakotey.io/node_modules
+smakotey.io/.pnp
+smakotey.io/.pnp.js
+smakotey.io/.yarn/install-state.gz
+
+# testing
+smakotey.io/coverage
+
+# next.js
+smakotey.io/.next/
+smakotey.io/out/
+
+# production
+smakotey.io/build
+
+# misc
+smakotey.io/.DS_Store
+smakotey.io/*.pem
+
+# debug
+smakotey.io/npm-debug.log*
+smakotey.io/yarn-debug.log*
+smakotey.io/yarn-error.log*
+
+# local env files
+smakotey.io/.env*.local
+
+# vercel
+smakotey.io/.vercel
+
+# typescript
+smakotey.io/*.tsbuildinfo
+smakotey.io/next-env.d.ts
