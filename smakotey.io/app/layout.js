@@ -1,23 +1,19 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+// Assuming metadata is used for the entire layout and not just specific pages
+export const layoutMetadata = {
   title: "Matt Akotey",
   description: "Matt Akotey's technology portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
-        <Head>
-          <title>{metadata.title}</title>
-          <meta name="description" content={metadata.description} />
-          <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href={inter.url} />
-        </Head>
-        <body className={inter.className}>{children}</body>
-      </html>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
   );
 }
+
+// If you need to set metadata at the layout level, consider using a context or a higher-order component to propagate metadata to the root of your application.
